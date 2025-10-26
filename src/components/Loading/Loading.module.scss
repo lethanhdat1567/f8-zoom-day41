@@ -1,0 +1,27 @@
+.wrap {
+    z-index: 1000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        width: 30px;
+        height: 30px;
+        content: "";
+        position: absolute;
+        border: 7px solid;
+        border-radius: 50%;
+        border-color: rgb(35, 168, 240) transparent;
+        animation: spinner ease 1s infinite;
+    }
+}
+
+@keyframes spinner {
+    to {
+        rotate: 360deg;
+    }
+}

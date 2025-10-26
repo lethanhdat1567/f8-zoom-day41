@@ -1,0 +1,126 @@
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://via.placeholder.com/1200x400?text=Banner") center/cover
+            no-repeat;
+    border-radius: 0.5rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+
+    @media (max-width: 640px) {
+        padding: 2rem 1rem;
+    }
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @media (max-width: 640px) {
+        font-size: 1.75rem;
+    }
+}
+
+.banner-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 640px) {
+        font-size: 1rem;
+    }
+}
+
+.banner-cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #2563eb;
+    }
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.about-description {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quick-links {
+    text-align: center;
+}
+
+.quick-links-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.link-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.link-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.link-description {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
