@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router";
 import Loading from "../Loading";
 import ProductList from "@/pages/ProductList";
 import ProductDetail from "@/pages/ProductDetail";
@@ -7,7 +7,7 @@ import Home from "@/pages/Home";
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Loading />
             <Routes>
                 <Route element={<DefaultLayout />}>
@@ -16,7 +16,7 @@ function AppRoutes() {
                     <Route path="/products/:slug" element={<ProductDetail />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

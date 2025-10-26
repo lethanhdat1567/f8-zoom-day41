@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
+    base: "/f8-zoom-day41/",
     plugins: [react()],
     resolve: {
         alias: {
